@@ -44,17 +44,17 @@ if (isset($_GET['numero'])) {
         $cadena_texto="";
         if($negrita){
     
-            $cadena_texto= '<h2>';
+            $cadena_texto.= "<h2>";
         }
-        $cadena_texto = "Suma $suma </br>";
-        $cadena_texto= "Resta $resta</br>";
-        $cadena_texto = "Multiplicacion $multiplicacion </br>";
-        $cadena_texto = "Division $division </br>";
+        $cadena_texto .= "Suma $suma </br>";
+        $cadena_texto.= "Resta $resta</br>";
+        $cadena_texto .= "Multiplicacion $multiplicacion </br>";
+        $cadena_texto .= "Division $division </br>";
         if($negrita){
     
-            $cadena_texto = '</h2>';
+            $cadena_texto.= "</h2>";
         }
-        var_dump($cadena_texto);
+        //var_dump($cadena_texto);
         return $cadena_texto;
         
     }
@@ -65,7 +65,9 @@ if (isset($_GET['numero'])) {
 
   
     //tabla(5);
-    echo calculadora(5,5);
+ 
+     echo calculadora(5,4);
+    
     
 
 ?>
