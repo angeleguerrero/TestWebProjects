@@ -42,15 +42,16 @@ echo sizeof($arraNum);
 //Buscar un elemento
 echo '</br>';
 echo 'Buscar Elemento'. '</br>';
-$busqueda= 8;
-echo "BUSCAR EN ARRAY ELEMENTO $busqueda";
+if (isset($_GET['numero'])){
+$busqueda= $_GET['numero'];
+echo "BUSCAR EN ARRAY ELEMENTO $busqueda". '</br>';
 $indice=array_search($busqueda, $arraNum);
-if (empty($indice)) {
-    echo "NUMERO  EXISTE". '</br>';
+if (!empty($indice)) {
+    echo "NUMERO  EXISTE EN INDICE NO. $indice". '</br>';
 } else{
 
     echo "NUMERO  NO EXISTE". '</br>';
 }
 
-
+}
 ?>
