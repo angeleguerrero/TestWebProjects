@@ -39,7 +39,7 @@ if ($error!='SALVADO'){
 </head>
 <body>
     <?php if($error=='SALVADO'): ?>
-<h2>Datos VAlidados correctamente</h2>
+<h2>Datos Validados correctamente</h2>
         <p><?=$nombre?></p>
         <p><?=$apellidos?></p>
         <p><?=$edad?></p>

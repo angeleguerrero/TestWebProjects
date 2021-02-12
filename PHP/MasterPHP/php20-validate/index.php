@@ -21,7 +21,7 @@
     }
     
     ?>
-
+    
         <form action="procesarForm.php" method="POST">
             <label for="nombre">Nombre: </label></br>
             <input type="text" name="nombre" required pattern="[A-Za-z]+"></br>
