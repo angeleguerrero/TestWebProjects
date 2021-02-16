@@ -1,0 +1,10 @@
+/*Crear tabla*/
+
+CREATE TABLE usuarios(
+
+    id int(11),
+    nombre varchar(100),
+    apellido varchar(255),
+    email  varchar(100),
+    contrasena varchar(255)
+);
