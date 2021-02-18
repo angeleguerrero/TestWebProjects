@@ -1,0 +1,24 @@
+#Mostrar datos espesificos
+
+#SELECT email, nombre FROM usuarios; 
+
+#Mostrar todos los campos
+
+#SELECT * FROM usuarios;
+
+#OPERADORES ARITMETICOS, se pueden combinar con las columnas
+
+#SELECT id, email, (7+7) AS 'OPERACION' FROM usuarios ORDER BY id DESC ;
+
+#FUNCIONES MATEMATICAS
+
+#VALOR ABSOLUTO
+#SELECT ABS(7+7) AS 'OPERACIONES' FROM usuarios;
+
+#REDONDEAR FLOOR AL MENOR DEL ENTERO ANTES DEL PUNTO
+
+SELECT FLOOR (5.4) AS 'OPERACIONES'FROM usuarios;
+
+#RAND NUMERO ALEATORIO, ROUND REDONDEO, TRUNCATE DECIMALES, SQRT RAIZ CUADRADA
+
+SELECT ROUND(7.5) AS 'REDONDEO' FROM usuarios;

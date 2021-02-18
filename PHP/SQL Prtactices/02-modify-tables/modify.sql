@@ -6,7 +6,7 @@
 
 #ALTER TABLE `usuarios_renom` CHANGE apellido apellidos varchar(100) null;
 
-SELECT * FROM `usuarios_renom`;
+#SELECT * FROM `usuarios_renom`;
 
 #Modificar columna
 
@@ -19,4 +19,7 @@ SELECT * FROM `usuarios_renom`;
 #ALTER TABLE `usuarios_renom` ADD website varchar(100) NOT NULL; 
 
 #Añadir restriccion a columna
-ALTER TABLE `usuarios_colum` ADD CONSTRAINT uq_email UNIQUE (email);
+#ALTER TABLE `usuarios_renom` ADD CONSTRAINT uq_email UNIQUE (email);
+
+#Borrar una columna
+ALTER TABLE `usuarios_renom` DROP  website;
