@@ -1,6 +1,6 @@
 #insertar nuevos registros
 
-INSERT INTO usuarios VALUES (null, 'Angel', 'Guerrero', 'Acceso123', '2022-05-05');
+INSERT INTO usuarios VALUES (null, 'Maruca', 'maruca@gmail.com', 'Acceso123', '2019-06-01');
 
 #insertar con solo algunas columnas
-INSERT INTO usuarios(email, password) VALUES('test@gmail.com', 'admin123');
+#INSERT INTO usuarios(email, password) VALUES('test@gmail.com', 'admin123');
