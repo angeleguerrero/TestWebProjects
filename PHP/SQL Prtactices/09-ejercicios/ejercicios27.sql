@@ -1,0 +1,1 @@
+select cl.nombre, SUM(au.precio*ce.cantidad) as IMPORTE from compras_encargos ce inner join autos au on ce.id_autos=au.id inner join clientes cl on cl.id=ce.id_clientes group by cl.id;
