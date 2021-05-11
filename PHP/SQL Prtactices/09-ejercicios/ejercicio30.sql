@@ -1,0 +1,2 @@
+/*todos los vendedores y el numero de cliente, muestra vendedores con o sin clientes*/
+select concat(ve.nombre, " ",ve.apellidos) as Vendedor, count(cl.id) as ID_Cliente from vendedores ve left join clientes cl on cl.id_vendedor=ve.id group by vendedor;

@@ -1,0 +1,3 @@
+/*Encargos con marca de autos, nombre de cliente y nombre de la ciudad, unicamente cuando sea Sto Dgo*/
+
+select ce.id as NO_ENCARGO, ma.marca as MARCA, cl.nombre as CLIENTE, ci.ciudad as CIUDAD  from compras_encargos ce inner join autos a on a.id=ce.id_autos inner join marca ma on ma.id=a.id_marca inner join clientes cl on cl.id=ce.id_clientes inner join ciudad ci on ci.id=cl.id_ciudad where ci.ciudad='SANTIAGO';

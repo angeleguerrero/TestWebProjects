@@ -1,0 +1,104 @@
+/*Fuentes*/
+
+@font-face {
+    font-family: fajala;
+    src: url(../fonts/fuente.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Generales*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Arial, Helvetica;
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+body {
+    background: url(../img/cubes.png) #F4F4F4;
+}
+
+
+/*Cabecera*/
+
+#idcabecera {
+    width: 85%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+    /*border: 1px solid black;*/
+}
+
+
+/*Logotipo*/
+
+#idlogo {
+    float: left;
+    width: 540px;
+    height: 120px;
+}
+
+#idlogo a {
+    font-family: "fajala", Helvetica;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #2979CD;
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 500ms;
+    line-height: 90px;
+    margin-left: 10px;
+}
+
+#idlogo a:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+
+
+/*Fin logo*/
+
+
+/*Menu*/
+
+#idmenu {
+    clear: both;
+    width: 100%;
+    height: 40px;
+    background: rgb(187, 187, 191);
+    background: linear-gradient(90deg, rgba(187, 187, 191, 1) 0%, rgba(186, 181, 181, 1) 30%, rgba(74, 77, 78, 0.7399334733893557) 92%);
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px #ccc;
+    overflow: hidden;
+}
+
+#idmenu ul {
+    list-style: none;
+}
+
+#idmenu ul li {
+    float: left;
+    line-height: 44px;
+    border-right: 1px solid #d6d6d6;
+}
+
+#idmenu ul li:hover {
+    background: rgb(187, 187, 191);
+    background: linear-gradient(90deg, rgb(143, 143, 184) 0%, rgb(122, 116, 116) 30%, rgba(56, 59, 59, 0.74) 92%);
+}
+
+#idmenu ul li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #fff;
+}
